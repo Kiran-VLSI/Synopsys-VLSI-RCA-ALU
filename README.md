@@ -1,99 +1,109 @@
-This repository contains two RTL design projects implemented using **Synopsys EDA tools** (Design Compiler, VCS, and PrimeTime). The projects demonstrate fundamental building blocks of digital design—**an 8-bit Ripple Carry Adder using 1-bit Full Adder** and a **32-bit Arithmetic Logic Unit (ALU)**—with complete synthesis, simulation, and timing analysis flows.
+# Synopsys-VLSI-RCA-ALU (RTL to GDSII Flow)
+
+This repository contains two digital design projects—**8-bit Ripple Carry Adder using 1-bit Full Adders** and a **32-bit Arithmetic Logic Unit (ALU)**—implemented using **Synopsys EDA tools**. Both designs follow the **complete RTL to GDSII digital IC design flow**, including RTL coding, synthesis, simulation, timing analysis, placement, routing, and final GDSII generation.
 
 ---
 
-## 🔧 Project 1: 8-bit Ripple Carry Adder using 1-bit Full Adder
+## 🚀 Projects Overview
 
-### 📘 Description
-This project implements an 8-bit Ripple Carry Adder (RCA) by cascading eight 1-bit Full Adders. Each Full Adder takes two input bits and a carry-in and produces a sum and a carry-out. The carry-out of one stage ripples into the next, forming the RCA.
+### 🔧 Project 1: 8-bit Ripple Carry Adder using 1-bit Full Adder
 
-### 🧠 Key Concepts
-- Structural Verilog design
-- Reusability of 1-bit Full Adder module
-- Hierarchical design approach
+#### 📘 Description:
+- A structural Verilog design that builds an 8-bit adder by connecting eight 1-bit Full Adders in series.
+- Demonstrates hierarchical and modular RTL design principles.
 
-### 🛠 Tools Used
-- **Synopsys Design Compiler (DC)** – RTL to gate-level synthesis  
-- **Synopsys VCS** – Simulation and functional verification  
-- **Synopsys PrimeTime** – Static Timing Analysis (STA)
+### 🔧 Project 2: 32-bit Arithmetic Logic Unit (ALU)
 
-### 📁 File Structure
-```
-
-Project\_1\_8bit\_Ripple\_Carry\_Adder/
-├── rtl/
-│   ├── full\_adder.v
-│   └── ripple\_carry\_adder.v
-├── testbench/
-│   └── tb\_rca.v
-├── scripts/
-│   ├── dc\_synthesis.tcl
-│   ├── vcs\_simulation.tcl
-│   └── pt\_analysis.tcl
-├── reports/
-│   ├── synthesis\_report.txt
-│   └── timing\_report.txt
-└── waveforms/
-└── rca.vcd
-
-```
+#### 📘 Description:
+- A behavioral Verilog design that performs ADD, SUB, AND, OR, XOR, and SLT operations.
+- Operation is selected using a 3-bit opcode.
+- Designed with reusability and functional coverage in mind.
 
 ---
 
-## 🔧 Project 2: 32-bit Arithmetic Logic Unit (ALU)
+## 🧱 Full RTL to GDSII Flow
 
-### 📘 Description
-This project implements a 32-bit ALU that can perform arithmetic and logical operations such as ADD, SUB, AND, OR, XOR, and SLT. The operations are selected using a 3-bit opcode. The design follows a behavioral Verilog approach and is verified through a testbench.
+| Step | Description | Tool |
+|------|-------------|------|
+| 1️⃣ RTL Coding | Verilog design of Full Adder, RCA, and ALU | Any Text Editor |
+| 2️⃣ Functional Simulation | RTL verification through testbench | Synopsys VCS |
+| 3️⃣ Synthesis | RTL to gate-level netlist conversion | Synopsys Design Compiler |
+| 4️⃣ Static Timing Analysis (STA) | Timing checks and slack analysis | Synopsys PrimeTime |
+| 5️⃣ Floorplanning | Die/Cell planning, pin placement | Synopsys IC Compiler II |
+| 6️⃣ Power Planning | Power ring and stripes creation | IC Compiler II |
+| 7️⃣ Placement | Standard cell placement | IC Compiler II |
+| 8️⃣ Clock Tree Synthesis (CTS) | Clock buffer insertion and optimization | IC Compiler II |
+| 9️⃣ Routing | Metal layer routing for connections | IC Compiler II |
+| 🔟 Signoff & GDSII Export | Final checks and GDSII generation | IC Compiler II |
 
-### 🧠 Key Concepts
-- Opcode-controlled operation selection
-- Behavioral modeling with `case` statements
-- 32-bit datapath design
+---
 
-### 🛠 Tools Used
-- **Synopsys Design Compiler (DC)** – Synthesis  
-- **Synopsys VCS** – Functional simulation  
-- **Synopsys PrimeTime** – Timing analysis and optimization
+## 📂 Repository Structure
 
-### 📁 File Structure
 ```
 
-Project\_2\_32bit\_ALU/
-├── rtl/
-│   └── alu\_32bit.v
-├── testbench/
-│   └── tb\_alu.v
-├── scripts/
-│   ├── dc\_synthesis.tcl
-│   ├── vcs\_simulation.tcl
-│   └── pt\_analysis.tcl
-├── reports/
-│   ├── synthesis\_report.txt
-│   └── timing\_report.txt
-└── waveforms/
-└── alu.vcd
+Synopsys-VLSI-RCA-ALU/
+├── Project\_1\_8bit\_Ripple\_Carry\_Adder/
+│   ├── rtl/
+│   ├── testbench/
+│   ├── scripts/
+│   ├── reports/
+│   ├── waveforms/
+│   └── gds/
+│       └── rca\_final.gds
+│
+├── Project\_2\_32bit\_ALU/
+│   ├── rtl/
+│   ├── testbench/
+│   ├── scripts/
+│   ├── reports/
+│   ├── waveforms/
+│   └── gds/
+│       └── alu\_final.gds
 
 ```
 
 ---
 
-## 📚 Topics Covered
+## 🧠 Topics Covered
 
 ```
 
-Verilog VLSI DigitalDesign Synopsys RTL EDA DesignCompiler VCS PrimeTime RCA ALU TimingAnalysis Synthesis Simulation HDL Tcl FullAdder RippleCarryAdder ArithmeticLogicUnit GateLevelNetlist FunctionalVerification StaticTimingAnalysis
+Verilog VLSI RTL-to-GDSII Synopsys DesignCompiler VCS PrimeTime ICCompiler Floorplanning PowerPlanning Placement Routing ClockTreeSynthesis GDSII HDL DigitalDesign Synthesis Simulation TimingAnalysis StaticTimingAnalysis FullAdder ALU
 
 ```
 
 ---
 
 ## 🎯 Learning Outcomes
-- RTL design and modular coding in Verilog
-- Testbench creation for simulation
-- Use of Synopsys tools for synthesis and STA
-- Tcl scripting for EDA automation
-- Waveform generation and timing report analysis
+
+- Hierarchical RTL design using Verilog
+- Writing and verifying testbenches
+- Synthesis, simulation, and STA using Synopsys tools
+- Tcl scripting for automation
+- Hands-on full flow: from RTL to GDSII
+- Exposure to physical design concepts and layout generation
 
 ---
 
+## 🙏 Acknowledgment
 
+Special thanks to **Latha ma'am** for continuous guidance and mentorship throughout the design process.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+```
+
+---
+
+✅ Let me know if you want:
+
+* `.README.md` file download
+* A sample `.tcl` script for synthesis or layout
+* A matching PowerPoint or report template for project submission
+
+Would you like me to help you generate a visual flow diagram too?
