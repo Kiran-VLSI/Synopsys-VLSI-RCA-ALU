@@ -1,6 +1,6 @@
 # Synopsys-VLSI-RCA-ALU (RTL to GDSII Flow)
 
-This repository contains two digital design projects—**8-bit Ripple Carry Adder using 1-bit Full Adders** and a **32-bit Arithmetic Logic Unit (ALU)**—implemented using **Synopsys EDA tools**. Both designs follow the **complete RTL to GDSII digital IC design flow**, including RTL coding, synthesis, simulation, timing analysis, placement, routing, and final GDSII generation.
+This repository contains two digital design projects **8-bit Ripple Carry Adder using 1-bit Full Adders** and a **32-bit Arithmetic Logic Unit (ALU)**—implemented using **Synopsys EDA tools**. Both designs follow the **complete RTL to GDSII digital IC design flow**, including RTL coding, synthesis, simulation, timing analysis, placement, routing, and final GDSII generation.
 
 ---
 
