@@ -59,7 +59,6 @@ Synopsys-VLSI-RCA-ALU/
 ├── Project\_1\_8bit\_Ripple\_Carry\_Adder/
 │   ├── rtl/
 │   ├── testbench/
-│   ├── scripts/
 │   ├── reports/
 │   ├── waveforms/
 │   └── gds/
@@ -68,8 +67,7 @@ Synopsys-VLSI-RCA-ALU/
 ├── Project\_2\_32bit\_ALU/
 │   ├── rtl/
 │   ├── testbench/
-│   ├── scripts/
-│   ├── reports/
+│   ├── scripts
 │   ├── waveforms/
 │   └── gds/
 │       └── alu\_final.gds
