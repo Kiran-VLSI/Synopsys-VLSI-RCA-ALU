@@ -21,22 +21,47 @@ This repository contains two digital design projects—**8-bit Ripple Carry Adde
 
 ---
 
-## 🧱 Full RTL to GDSII Flow
-
-| Step | Description | Tool |
-|------|-------------|------|
-| 1️⃣ RTL Coding | Verilog design of Full Adder, RCA, and ALU | Any Text Editor |
-| 2️⃣ Functional Simulation | RTL verification through testbench | Synopsys VCS |
-| 3️⃣ Synthesis | RTL to gate-level netlist conversion | Synopsys Design Compiler |
-| 4️⃣ Static Timing Analysis (STA) | Timing checks and slack analysis | Synopsys PrimeTime |
-| 5️⃣ Floorplanning | Die/Cell planning, pin placement | Synopsys IC Compiler II |
-| 6️⃣ Power Planning | Power ring and stripes creation | IC Compiler II |
-| 7️⃣ Placement | Standard cell placement | IC Compiler II |
-| 8️⃣ Clock Tree Synthesis (CTS) | Clock buffer insertion and optimization | IC Compiler II |
-| 9️⃣ Routing | Metal layer routing for connections | IC Compiler II |
-| 🔟 Signoff & GDSII Export | Final checks and GDSII generation | IC Compiler II |
+Thanks! Based on your input, here is the **final updated section** for your `README.md` that clearly highlights the Synopsys EDA tools used and their purpose in the **complete RTL to GDSII design flow**:
 
 ---
+
+## 🛠️ Synopsys EDA Tools Used
+
+This complete **RTL to GDSII digital IC design flow** is achieved with the help of the following **Synopsys EDA tools**:
+
+### 🔹 **Synopsys VCS® (Verilog Compiler Simulator)**
+
+> Used for compiling and simulating RTL code and testbenches. It verifies the functional correctness of the design before synthesis.
+
+### 🔹 **Synopsys Verdi®**
+
+> An advanced debugging platform used to analyze simulation waveforms, view design hierarchy, and trace signals across the design. Integrated with VCS for visual debugging.
+
+### 🔹 **Synopsys Design Compiler®**
+
+> Performs logic synthesis — converts Verilog RTL code into a technology-mapped gate-level netlist optimized for area, power, and timing.
+
+### 🔹 **Synopsys IC Compiler™ (ICC)**
+
+> A complete physical design tool used for:
+
+* Floorplanning
+* Power planning
+* Placement
+* Clock Tree Synthesis (CTS)
+* Routing
+* GDSII file generation
+
+---
+
+You can place this section under **🧱 RTL to GDSII Flow** or make it a separate section in your `README.md` like:
+
+```markdown
+## 🛠️ Synopsys EDA Tools Used
+...
+```
+
+Would you like me to generate the full final `README.md` including this section?
 
 ## 📂 Repository Structure
 
@@ -86,24 +111,3 @@ Verilog VLSI RTL-to-GDSII Synopsys DesignCompiler VCS PrimeTime ICCompiler Floor
 
 ---
 
-## 🙏 Acknowledgment
-
-Special thanks to **Latha ma'am** for continuous guidance and mentorship throughout the design process.
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-✅ Let me know if you want:
-
-* `.README.md` file download
-* A sample `.tcl` script for synthesis or layout
-* A matching PowerPoint or report template for project submission
-
-Would you like me to help you generate a visual flow diagram too?
