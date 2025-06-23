@@ -67,7 +67,6 @@ Synopsys-VLSI-RCA-ALU/
 ├── Project\_2\_32bit\_ALU/
 │   ├── rtl/
 │   ├── testbench/
-│   ├── scripts
 │   ├── waveforms/
 │   └── gds/
 │       └── alu\_final.gds
