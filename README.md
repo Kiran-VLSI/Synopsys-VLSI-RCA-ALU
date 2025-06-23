@@ -51,15 +51,6 @@ This complete **RTL to GDSII digital IC design flow** is achieved with the help 
 
 ---
 
-You can place this section under **🧱 RTL to GDSII Flow** or make it a separate section in your `README.md` like:
-
-```markdown
-## 🛠️ Synopsys EDA Tools Used
-...
-```
-
-Would you like me to generate the full final `README.md` including this section?
-
 ## 📂 Repository Structure
 
 ```
