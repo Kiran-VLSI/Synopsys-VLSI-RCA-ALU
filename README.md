@@ -21,9 +21,6 @@ This repository contains two digital design projects—**8-bit Ripple Carry Adde
 
 ---
 
-Thanks! Based on your input, here is the **final updated section** for your `README.md` that clearly highlights the Synopsys EDA tools used and their purpose in the **complete RTL to GDSII design flow**:
-
----
 
 ## 🛠️ Synopsys EDA Tools Used
 
